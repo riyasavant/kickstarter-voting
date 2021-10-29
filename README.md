@@ -1,6 +1,6 @@
 # Kickstarter Voting App  
 ## Problem Definition  
-### Introduction to Kickstart    
+### Introduction to Kickstarter    
 [Kickstarter](https://www.kickstarter.com/) is an application, where developers showcase their product idea in order to get some funding. After the product is ready, the contributors get rewarded in return.  
 
 ### Problem Definition  
