@@ -1,7 +1,7 @@
 # Kickstart Voting App  
 ## Problem Definition  
 ### Introduction to Kickstart    
-Kickstart is an application, where developers showcase their product in order to get some funding. After the prduct is ready, the contributors get rewarded in return.  
+Kickstart is an application, where developers showcase their product idea in order to get some funding. After the product is ready, the contributors get rewarded in return.  
 
 ### Problem Definition  
 Certain individuals indulge in fraudulent practices, and instead of using the donated amount for their project, they use it for personal expenses. The contributors then have no way to get their money back.  
@@ -13,8 +13,17 @@ Instead of sending the money to the developer, the contributors can send the mon
 1. Clone the repository: `git clone git@github.com:riyasavant/kickstart-voting.git`
 2. `cd kickstart-voting`
 3. Install the dependecies: `npm i`
-4. Run the project: `npm run dev`
-5. Open the application: `localhost:3000`  
+4. Follow the `metamask` setup steps given below
+5. Run the project: `npm run dev`
+6. Open the application: `localhost:3000`  
+
+## Application Design  
+#### 1. Individual creates a campaign (asking for funding), other individuals can contribute to this. The amount being contributed is stored in the Ethereum account   
+![Step 1](./images/step1.png)  
+#### 2. When the manager (individual who created the campaign) wants to withdraw an amount, they create a request. Contributors of the project will then vote on the request  
+![Step 2](./images/step2.png)  
+#### 3. If the number of `yes` votes are more than the number of `no` votes, the manager can withdraw the requested amount    
+![Step 3](./images/step3.png)  
 
 ## Contract Design  
 #### Request Struct  
