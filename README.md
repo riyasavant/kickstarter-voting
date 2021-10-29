@@ -16,6 +16,36 @@ Instead of sending the money to the developer, the contributors can send the mon
 4. Run the project: `npm run dev`
 5. Open the application: `localhost:3000`  
 
+## Contract Design  
+#### Request Struct  
+| Name          	| Description                                                                    	| Type                     	|
+|---------------	|--------------------------------------------------------------------------------	|--------------------------	|
+| description   	| States why the amount is being withdrawn                                       	| string                   	|
+| value         	| The amount to be withdrawn                                                     	| uint256                  	|
+| recipient     	| The money will be transferred to this address incase the request is successful 	| address                  	|
+| complete      	| States whether the request is completed or pending                             	| bool                     	|
+| approvalCount 	| Number of positive votes received                                              	| uint256                  	|
+| approvals     	| Stores the list of approvers who have voted                                    	| mapping(address => bool) 	|  
+
+#### Storage Variables
+| Name                	| Description                                                             	| Type                     	|
+|---------------------	|-------------------------------------------------------------------------	|--------------------------	|
+| manager             	| Stores the address of manager / individual who creates the campaign     	| address                  	|
+| minimumContribution 	| Sets the minimum amount that the contributor can contribute             	| uint                     	|
+| approvers           	| Stores the list of approvers / contributors who have contributed        	| mapping(address => bool) 	|
+| requests            	| Stores the requests that the manager creates to withdraw certain amount 	| Request[]                	|  
+
+#### Functions  
+| Name             	| Description                                                                                	| Who can access 	|
+|------------------	|--------------------------------------------------------------------------------------------	|----------------	|
+| contribute       	| Adds an individual to the approvers mapping, and stored the amount sent                    	| any individual 	|
+| createRequest    	| The manager creates a request to withdraw money, stored in requests array                  	| manager        	|
+| approverRequest  	| Takes in account the votes by approvers, and stores the approver and approvalCount         	| approvers      	|
+| finalizeRequest  	| The method called by the manager in order to withdraw money incase any request is approved 	| manager        	|
+| getSummary       	| Return minimumContribution, approversCount, requests.length, manager and balance           	| any individual 	|
+| getRequestsCount 	| Returns the number of requests created by the manager                                      	| any individual 	|   
+
+
 ## Project Setup  
 ### Metamask  
 1. Install the `metamask` extension on chrome
