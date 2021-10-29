@@ -10,7 +10,7 @@ Certain individuals indulge in fraudulent practices, and instead of using the do
 Instead of sending the money to the developer, the contributors can send the money to an ethereum contract. Whenever the developer wants to withdraw some amount, they will ahve to create a `spending request` which the contributors will then `vote` on. In case the request is approved, the developer will then be able to withdraw the amount / send the amount to the vendor  
 
 ## Run the Application  
-1. Clone the repository: `git clone git@github.com:riyasavant/kickstart-voting.git`
+1. Clone the repository: `git clone git@github.com:riyasavant/kickstarter-voting.git`
 2. `cd kickstart-voting`
 3. Install the dependecies: `npm i`
 4. Follow the `metamask` setup steps given below
@@ -70,7 +70,7 @@ Acts as the medium between web3 and Test network
 4. Get the API endpoint  
 
 ### Setup the repo  
-1. Clone the repository: `git clone git@github.com:riyasavant/kickstart-voting.git`
+1. Clone the repository: `git clone git@github.com:riyasavant/kickstarter-voting.git`
 2. `cd kickstart-voting`
 3. Install the dependecies: `npm i`
 4. `cd ethereum`
