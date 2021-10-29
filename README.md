@@ -23,6 +23,13 @@ Instead of sending the money to the developer, the contributors can send the mon
 3. Set the network to `Rinkeby Test Network`
 4. Get some free faucets by visiting [https://faucets.chain.link/rinkeby](https://faucets.chain.link/rinkeby) and [https://rinkeby-faucet.com/](https://rinkeby-faucet.com/)  
 
+### Infura API  
+Acts as the medium between web3 and Test network  
+1. Visit the site [https://infura.io/](https://infura.io/)
+2. Create an account and Verify
+3. Create a project under Ethereum section
+4. Get the API endpoint  
+
 ### Setup the repo  
 1. Clone the repository: `git clone git@github.com:riyasavant/kickstart-voting.git`
 2. `cd kickstart-voting`
@@ -30,9 +37,14 @@ Instead of sending the money to the developer, the contributors can send the mon
 4. `cd ethereum`
 5. Compile the contract: `node compile.js`
 6. Replace your recovery phrase and Infura endpoint in `ethereum/deploy.js` file
-7. Deploy the contract: `node deploy.js` and store the deployed contract address
-8. Add the address to `ethereum/factory.js` file
-9. Run the project using `npm run dev`  
+7. Deploy the contract: `node deploy.js` and store the deployed contract address in `ethereum/factory.js`
+8. Run the project using `npm run dev`  
 
 ### Testing  
-To test the application using various accounts, create different accounts on Rinkeby Test Network and follow the same links in order to get faucets. Once done, switch to different accounts in order to replicate different users.
+To test the application using various accounts  
+1. Create different accounts on Rinkeby Test Network under the same recovery phrase
+2. Follow the same links in order to get faucets
+3. Switch to different accounts in order to replicate different users  
+
+## Local testing using Mocha  
+Run `npm run test` to test the contract using Mocha
