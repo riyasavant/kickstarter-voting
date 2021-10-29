@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Menu style={{ marginTop: "10px" }}>
       <Link route="/">
-        <a className="item">Kickstart Voting</a>
+        <a className="item">Kickstarter Voting</a>
       </Link>
       <Menu.Menu position="right">
         <Link route="/">
