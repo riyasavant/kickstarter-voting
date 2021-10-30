@@ -7,7 +7,7 @@
 Certain individuals indulge in fraudulent practices, and instead of using the donated amount for their project, they use it for personal expenses. The contributors then have no way to get their money back.  
 
 ### Solution
-Instead of sending the money to the developer, the contributors can send the money to an ethereum contract. Whenever the developer wants to withdraw some amount, they will ahve to create a `spending request` which the contributors will then `vote` on. In case the request is approved, the developer will then be able to withdraw the amount / send the amount to the vendor  
+Instead of sending the money to the developer, the contributors can send the money to an ethereum contract. Whenever the developer wants to withdraw some amount, they will have to create a `spending request` which the contributors will then `vote` on. In case the request is approved, the developer will then be able to withdraw the amount / send the amount to the vendor  
 
 ## Run the Application  
 1. Clone the repository: `git clone git@github.com:riyasavant/kickstarter-voting.git`
